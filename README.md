@@ -2,15 +2,17 @@
 
 > A graphql wrapper around the youtube api v3.
 
+This little project is a graphql endpoint to query youtube data with just what you need. See it live at https://youtube-graphql.now.sh/.
+
 ## Getting Started
 
 First you need to have a youtube api key. See [there](https://developers.google.com/youtube/v3/getting-started) to get one.
 
-Go to [url]() or see [Run localy](#Run-localy) to get a working playgroung.
+Go to https://youtube-graphql.now.sh/ or see [Run localy](#run-localy) to get a working playgroung.
 
 Each request need this api key. To provide this key just add an Authorization header with the Bearer scope.
 
-With the playground it's easy, at the bottom click on the Headers text and write something like this:
+With the playground it's easy, at the bottom click on the HTTP HEADERS text and write something like this:
 
 ```json
 {
