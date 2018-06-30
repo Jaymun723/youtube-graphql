@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "repository": "https://github.com/Jaymun723/youtube-graphql.git",
   "author": "Jaymun723 <jaymun723@yahoo.com>",
