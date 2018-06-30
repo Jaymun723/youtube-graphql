@@ -40,6 +40,9 @@ const getPartRequest = (info, name) => {
 }
 
 const getApikey = (context) => {
+  if (!context.req.headers.authorization) {
+    throw new AuthenticationError('You must provide a youtube api key with this format `Bearer <API KEY>`.')
+  }
   let key = context.req.headers.authorization.split(/\s+/g)
   if (key[0] !== 'Bearer') {
     throw new AuthenticationError('You must provide a youtube api key with this format `Bearer <API KEY>`.')
